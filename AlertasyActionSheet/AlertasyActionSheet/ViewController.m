@@ -67,6 +67,21 @@
     
 }
 
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    NSString * tituloDelBoton = [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([tituloDelBoton isEqualToString:@"Destruir"]) {
+        mensajeDeEstado.text = @"Clickead en 'Destruir'";
+    } else if (([tituloDelBoton isEqualToString:@"Negociar"])) {
+        mensajeDeEstado.text = @"Clickead en 'Negociar'";
+    } else if (([tituloDelBoton isEqualToString:@"Compromiso"])) {
+        mensajeDeEstado.text = @"Clickead en 'Compromiso'";
+    } else {
+        mensajeDeEstado.text = @"Clickead en 'Cancel'";
+    }
+
+}
+
 - (IBAction)doSound:(UIButton *)sender {
     
     
