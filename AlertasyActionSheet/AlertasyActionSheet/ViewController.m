@@ -27,6 +27,13 @@
 }
 
 - (IBAction)doAlert:(UIButton *)sender {
+    UIAlertView * alertDialog;
+    alertDialog = [[UIAlertView alloc] initWithTitle:@"Boton de Alerta Seleccionado"
+                                             message:@"Yo necesito tu atencion Ahora"
+                                            delegate:nil
+                                   cancelButtonTitle:@"OK"
+                                   otherButtonTitles:@"Quizas Luego",@"Nunca",nil];
+    [alertDialog show];
     
     
 }
