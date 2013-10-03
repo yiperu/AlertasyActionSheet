@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB48C95817FDD047006EA8F1 /* alertsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB48C95617FDD047006EA8F1 /* alertsound.wav */; };
 		CB48C95917FDD047006EA8F1 /* soundeffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB48C95717FDD047006EA8F1 /* soundeffect.wav */; };
+		CB48C95B17FDD154006EA8F1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB48C95A17FDD154006EA8F1 /* AudioToolbox.framework */; };
 		CBFC9ED817FD49C100EC44BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC9ED717FD49C100EC44BB /* Foundation.framework */; };
 		CBFC9EDA17FD49C100EC44BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC9ED917FD49C100EC44BB /* CoreGraphics.framework */; };
 		CBFC9EDC17FD49C100EC44BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC9EDB17FD49C100EC44BB /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		CB48C95617FDD047006EA8F1 /* alertsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alertsound.wav; sourceTree = "<group>"; };
 		CB48C95717FDD047006EA8F1 /* soundeffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soundeffect.wav; sourceTree = "<group>"; };
+		CB48C95A17FDD154006EA8F1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CBFC9ED417FD49C100EC44BB /* AlertasyActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertasyActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC9ED717FD49C100EC44BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBFC9ED917FD49C100EC44BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB48C95B17FDD154006EA8F1 /* AudioToolbox.framework in Frameworks */,
 				CBFC9EDA17FD49C100EC44BB /* CoreGraphics.framework in Frameworks */,
 				CBFC9EDC17FD49C100EC44BB /* UIKit.framework in Frameworks */,
 				CBFC9ED817FD49C100EC44BB /* Foundation.framework in Frameworks */,
@@ -114,6 +117,7 @@
 		CBFC9ED617FD49C100EC44BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB48C95A17FDD154006EA8F1 /* AudioToolbox.framework */,
 				CBFC9ED717FD49C100EC44BB /* Foundation.framework */,
 				CBFC9ED917FD49C100EC44BB /* CoreGraphics.framework */,
 				CBFC9EDB17FD49C100EC44BB /* UIKit.framework */,
