@@ -55,6 +55,16 @@
 
 - (IBAction)doActionSheet:(UIButton *)sender {
     
+    UIActionSheet * actionSheet;
+    actionSheet = [[UIActionSheet alloc] initWithTitle:@"Acciones Viables"
+                                              delegate:self
+                                     cancelButtonTitle:@"Cancel"
+                                destructiveButtonTitle:@"Destruir"
+                                     otherButtonTitles:@"Negociar",@"Compromiso", nil];
+    //actionSheet.actionSheetStyle = UIBarStyleBlackTranslucent;
+    actionSheet.actionSheetStyle = UIBarStyleBlackOpaque;
+    [actionSheet showInView:self.view];
+    
 }
 
 - (IBAction)doSound:(UIButton *)sender {
