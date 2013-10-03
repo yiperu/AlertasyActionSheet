@@ -91,12 +91,19 @@
 }
 
 - (IBAction)doAlertSound:(UIButton *)sender {
+    SystemSoundID soundID;
+    NSString *soundFile = [[NSBundle mainBundle] pathForResource:@"alertsound" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
     
+    //AudioServicesPlaySystemSound(soundID);
+    AudioServicesPlayAlertSound(soundID);
     
 }
 
 - (IBAction)doVibration:(UIButton *)sender {
+    //kSystemSoundID_Vibrate soundID_vibrate;
     
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     
 }
 @end
