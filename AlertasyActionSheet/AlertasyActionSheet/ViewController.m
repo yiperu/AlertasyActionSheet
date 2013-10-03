@@ -13,6 +13,8 @@
 @end
 
 @implementation ViewController
+@synthesize mensajeDeEstado;
+
 
 - (void)viewDidLoad
 {
@@ -30,11 +32,24 @@
     UIAlertView * alertDialog;
     alertDialog = [[UIAlertView alloc] initWithTitle:@"Boton de Alerta Seleccionado"
                                              message:@"Yo necesito tu atencion Ahora"
-                                            delegate:nil
+                                            delegate:self
                                    cancelButtonTitle:@"OK"
                                    otherButtonTitles:@"Quizas Luego",@"Nunca",nil];
     [alertDialog show];
     
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+
+    NSString * tituloDelBoton = [alertView buttonTitleAtIndex:buttonIndex];
+    if ([tituloDelBoton isEqualToString:@"Quizas Luego"]) {
+        mensajeDeEstado.text = @"Clickead en 'Quizas Luego'";
+    } else if (([tituloDelBoton isEqualToString:@"Nunca"])) {
+        mensajeDeEstado.text = @"Clickead en 'Nunca'";
+    } else {
+        mensajeDeEstado.text = @"Clickead en 'OK'";
+    }
     
 }
 

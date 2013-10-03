@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate>
 
 
 - (IBAction)doAlert:(UIButton *)sender;
@@ -17,5 +17,6 @@
 - (IBAction)doAlertSound:(UIButton *)sender;
 - (IBAction)doVibration:(UIButton *)sender;
 
+@property (strong, nonatomic) IBOutlet UILabel *mensajeDeEstado;
 
 @end
