@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB48C95817FDD047006EA8F1 /* alertsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB48C95617FDD047006EA8F1 /* alertsound.wav */; };
+		CB48C95917FDD047006EA8F1 /* soundeffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB48C95717FDD047006EA8F1 /* soundeffect.wav */; };
 		CBFC9ED817FD49C100EC44BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC9ED717FD49C100EC44BB /* Foundation.framework */; };
 		CBFC9EDA17FD49C100EC44BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC9ED917FD49C100EC44BB /* CoreGraphics.framework */; };
 		CBFC9EDC17FD49C100EC44BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC9EDB17FD49C100EC44BB /* UIKit.framework */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB48C95617FDD047006EA8F1 /* alertsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alertsound.wav; sourceTree = "<group>"; };
+		CB48C95717FDD047006EA8F1 /* soundeffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soundeffect.wav; sourceTree = "<group>"; };
 		CBFC9ED417FD49C100EC44BB /* AlertasyActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertasyActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC9ED717FD49C100EC44BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBFC9ED917FD49C100EC44BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB48C95517FDD035006EA8F1 /* sonidos */ = {
+			isa = PBXGroup;
+			children = (
+				CB48C95617FDD047006EA8F1 /* alertsound.wav */,
+				CB48C95717FDD047006EA8F1 /* soundeffect.wav */,
+			);
+			name = sonidos;
+			sourceTree = "<group>";
+		};
 		CBFC9ECB17FD49C100EC44BB = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 		CBFC9EDD17FD49C100EC44BB /* AlertasyActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				CB48C95517FDD035006EA8F1 /* sonidos */,
 				CBFC9EE617FD49C100EC44BB /* AppDelegate.h */,
 				CBFC9EE717FD49C100EC44BB /* AppDelegate.m */,
 				CBFC9EE917FD49C100EC44BB /* Main.storyboard */,
@@ -228,9 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB48C95917FDD047006EA8F1 /* soundeffect.wav in Resources */,
 				CBFC9EF017FD49C100EC44BB /* Images.xcassets in Resources */,
 				CBFC9EE217FD49C100EC44BB /* InfoPlist.strings in Resources */,
 				CBFC9EEB17FD49C100EC44BB /* Main.storyboard in Resources */,
+				CB48C95817FDD047006EA8F1 /* alertsound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +476,7 @@
 				CBFC9F0817FD49C100EC44BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBFC9F0917FD49C100EC44BB /* Build configuration list for PBXNativeTarget "AlertasyActionSheetTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +485,7 @@
 				CBFC9F0B17FD49C100EC44BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
